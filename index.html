@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer type="text/javascript" src="js/main.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mary Mwende – Tech Recruiter</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/minireset.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  </head>
+  <body>
+    
+    <div class="wallpaper">
+      <div id="wallpaper" class="wallpaper" data-image="image/57d631efb66a10bab3d515e24122c683.jpg"></div
+        <figure id="picture" class="picture"></figure>
+        <img id="pictureImage"
+        function loadImage(id, targetId) {
+          var el = document.getElementById(id);
+          var targetEl = targetId ? document.getElementById(targetId) : el;
+          var imageToLoad;
+          if (el.dataset.image) {
+          imageToLoad = el.dataset.image;
+          } else if (typeof el.currentSrc === 'undefined') {
+          imageToLoad = el.src;
+          } else {
+          imageToLoad = el.currentSrc;
+          }
+          if (imageToLoad) {
+          var img = new Image();
+          img.src = imageToLoad;
+          img.onload = function() {
+          targetEl.classList.add('is-loaded');
+          };
+        }
+      }
+      
+      function loadImage(id, targetId) {}
+      var el = document.getElementById(id);
+      var targetEl = targetId ? document.getElementById(targetId) : el;
+      var imageToLoad;
+      if (el.dataset.image) {
+        imageToLoad = el.dataset.image;
+        } else if (typeof el.currentSrc === 'undefined') {
+        imageToLoad = el.src;
+        } else {
+        imageToLoad = el.currentSrc;
+        }
+
+        if (imageToLoad)
+        var img = new Image();
+img.src = imageToLoad;
+img.onload = function() {
+  targetEl.classList.add('is-loaded');
+  };
+  
+document.addEventListener('DOMContentLoaded', function() {
+  loadImage('wallpaper');
+  loadImage('pictureImage', 'picture');
+  });
+ 
+class="picture-image"
+src="images/alex.jpg"
+srcset="images/alex.jpg 1x,
+images/alex@2x.jpg 2x,
+images/alex@3x.jpg 3x"
+alt="Portrait of Mary Mwende"
+width="320"
+height="320">
+
+    </div>
+    <div class="content">
+      <aside class="side">
+        <figure class="picture">
+          <div class="picture-shadow"></div>
+          <img
+            id="pictureImage"
+            class="picture-image"
+            src="image/./35f5b0b878a09e63ed4a171279e5131f.jpg"
+            alt="Portrait of Alex Jefferson"
+            width="320"
+            height="320"
+          />
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">Hi, I'm Mary Mwende</h1>
+        <p class="job">Tech recruiter</p>
+        <hr class="hr" />
+        <div class="description">
+          <p>
+            I spend my time traveling the world, helping startups and tech
+            businesses hire the best people.
+          </p>
+        </div>
+        <div class="contact">
+          <ul class="social">
+            <li>
+            <a>
+            <i class="fab fa-twitter"></i>
+            </a>
+            </li>
+            <li>
+            <a>
+            <i class="fab fa-github"></i>
+            </a>
+            </li>
+            <li>
+            <a>
+            <i class="fab fa-linkedin"></i>
+          </a>
+          
+        </li>
+      </ul>
+          <a class="button" href="mailto:youremail@example.com">
+            Get in touch
+          </a>
+        </div>
+      </main>
+    </div>
+    <noscript>
+      <style type="text/css">
+      .wallpaper {
+      animation-name: zoomOut;
+      }
+      .picture {
+      animation-name: dropIn;
+      }
+      </style>
+      </noscript>
+  </body>
+</html>
